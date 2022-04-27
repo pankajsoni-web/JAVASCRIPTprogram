@@ -29,6 +29,54 @@ points.sort(function(a, b){return a - b});
 document.getElementById("demo5").innerHTML = points;
 points.sort(function(a, b){return b - a});
 document.getElementById("demo6").innerHTML = points;
+
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo7").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo8").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+const over18 = numbers.filter(myFunction);
+
+document.getElementById("demo9").innerHTML = over18;
+function myFunction(value, index, array) {
+  return value > 18;
+}
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let position = fruits.indexOf("Apple") + 1;
+
+document.getElementById("demo10").innerHTML = "Apple is found in position " + position;
+const numbers = [4, 9, 16, 25, 29];
+let first = numbers.find(myFunction);
+
+document.getElementById("demo11").innerHTML = "First number over 18 is " + first;
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const keys = fruits.keys();
+
+let text = "";
+for (let x of keys) {
+  text += x + "<br>";
+}
+
+document.getElementById("demo12
+").innerHTML = text;
 </script>
 
 </body>
