@@ -77,6 +77,13 @@ for (let x of keys) {
 
 document.getElementById("demo12
 ").innerHTML = text;
+
+const f = fruits.entries();
+
+for (let x of f) {
+  document.getElementById("demo13").innerHTML += x + "<br>";
+}
+document.getElementById("demo14").innerHTML = fruits.includes("Mango");
 </script>
 
 </body>
