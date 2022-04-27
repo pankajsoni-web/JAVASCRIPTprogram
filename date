@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+const d1 = new Date();
+document.getElementById("demo1").innerHTML = d1.toUTCString();
+document.getElementById("demo2").innerHTML = d.toDateString();
+</script>
+
+</body>
+</html>
