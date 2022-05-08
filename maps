@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Map Objects</h2>
+<p>Creating a Map from an Array:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+// Create a Map
+const fruits=new Map([
+    ["apples",500],
+    ["bananas", 300],
+  ["oranges", 200]
+]);
+fruits.set("watermelon", 600);
+fruits.delete("apples");
+
+document.getElementById("demo").innerHTML = fruits.get("watermelon");
+document.getElementById("demo1").innerHTML = fruits.size;
+document.getElementById("demo2").innerHTML = fruits.has("apples");
+</script>
+
+</body>
+</html>
